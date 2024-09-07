@@ -26,7 +26,6 @@ h2 {
     margin: 10px;
 }
 
-/* from miss maam  */
 .container {
     display: grid;                  
     grid-template-columns: repeat(2, 1fr); 
@@ -34,7 +33,6 @@ h2 {
     padding: 20px;                    
 }
 
-/* from miss maam  */
 .box {
     background-color: rgb(27, 96, 133);
     padding: 20px;
@@ -43,7 +41,6 @@ h2 {
     color: white;
 }
 
-/* from miss maam  */
 .clouds {
     position: absolute;
     top: 0;
@@ -56,17 +53,15 @@ h2 {
     z-index: -1; 
 }
 
-/* from miss maam  */
 @keyframes moveClouds {
     0% {
-        background-position: 0 0; /* Start at the left */
+        background-position: 0 0; 
     }
     100% {
-        background-position: 100% 0; /* Move to the right */
+        background-position: 100% 0;
     }
 }
 
-/* from miss maam  */
 .sun {
     position: absolute;
     top: 0;
@@ -79,13 +74,12 @@ h2 {
     z-index: -1; 
 }
 
-/* from miss maam  */
 @keyframes moveSun {
     0% {
-        background-position: 0 0; /* Start at the left */
+        background-position: 0 0; 
     }
     100% {
-        background-position: 100% 0; /* Move to the right */
+        background-position: 100% 0;
     }
 }
 
@@ -100,15 +94,13 @@ h2 {
     border-right: 3px solid black;;
     text-align: center;
     color: black;
-    flex: 1;                           /* Each section takes equal space */
+    flex: 1;                          
     padding: 20px;
     text-align: center;
     position: relative; 
 }
 
 .outercontainer {
-    /* border-top: 5px;
-    border-bottom: 5px; */
     border: 3px solid black;
     border-radius: 10px;
 }
@@ -122,6 +114,6 @@ h2 {
 }
 
 .button:hover {
-    background-color: #a9aeaa;  /* Darker green on hover */
+    background-color: #a9aeaa;
     border-radius: 10px;
 }
