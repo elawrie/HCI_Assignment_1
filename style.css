@@ -1,3 +1,127 @@
 body {
-    background-color: lightblue;
+    background-color: rgb(199, 233, 244);
+    margin: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(27, 96, 133);
+    text-shadow: 5px;
+}
+
+h2 {
+    text-align: center;
+    size: 20px; 
+}
+
+.location {
+    display: flex;            
+    justify-content: center;      
+    align-items: center; 
+}
+
+.pin {
+    height: 50px;
+    width: 40px;
+    margin: 10px;
+}
+
+/* from miss maam  */
+.container {
+    display: grid;                  
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;                      
+    padding: 20px;                    
+}
+
+/* from miss maam  */
+.box {
+    background-color: rgb(27, 96, 133);
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+}
+
+/* from miss maam  */
+.clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 10px;
+    background: url('cloud4.png') repeat-x; 
+    animation: moveClouds 30s linear infinite; 
+    z-index: -1; 
+}
+
+/* from miss maam  */
+@keyframes moveClouds {
+    0% {
+        background-position: 0 0; /* Start at the left */
+    }
+    100% {
+        background-position: 100% 0; /* Move to the right */
+    }
+}
+
+/* from miss maam  */
+.sun {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 10px;
+    background: url('sun2.png'); 
+    animation: moveSun 30s linear infinite; 
+    z-index: -1; 
+}
+
+/* from miss maam  */
+@keyframes moveSun {
+    0% {
+        background-position: 0 0; /* Start at the left */
+    }
+    100% {
+        background-position: 100% 0; /* Move to the right */
+    }
+}
+
+.container2 {
+    display: flex;    
+}
+
+.box2 {
+    background-color: rgb(199, 233, 244);
+    padding: 20px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;;
+    text-align: center;
+    color: black;
+    flex: 1;                           /* Each section takes equal space */
+    padding: 20px;
+    text-align: center;
+    position: relative; 
+}
+
+.outercontainer {
+    /* border-top: 5px;
+    border-bottom: 5px; */
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.whitespace {
+    margin: 30px;
+}
+
+.smallwhitespace {
+    margin: 15px;
+}
+
+.button:hover {
+    background-color: #a9aeaa;  /* Darker green on hover */
+    border-radius: 10px;
 }
